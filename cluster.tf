@@ -52,7 +52,7 @@ resource "aws_security_group_rule" "demo-cluster-ingress-node-https" {
   type              = "ingress"
 }
 resource "aws_security_group_rule" "demo-cluster-ingress-workstation-https" {
-  cidr_blocks       = 54.185.157.100/32
+  cidr_blocks       = ["54.185.157.100/32"]
   description       = "Allow workstation to communicate with the cluster API Server"
   from_port         = 443
   protocol          = "tcp"
