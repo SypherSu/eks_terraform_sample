@@ -75,7 +75,9 @@ Download the repository.
 	$ git clone https://github.com/SypherSu/eks_terraform_sample.git
     $ cd eks_terraform_sample
     
-First we need to initiate the directory.
+First, open cluster.tf, and find **aws_security_group_rule** **demo-cluster-ingress-workstation-https**, and change the **cidr_blocks** to your Cloud9 Public IP.
+
+Next we need to initiate the directory.
 
 	$ terraform init
     
